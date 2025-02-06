@@ -1,13 +1,22 @@
 import ColorPicker from "./components/ColorPicker";
-
-function App() {
-  const colorsArray = ["red", "blue", "yellow"];
-
+const App = () => {
+  const colorsList = [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "pink",
+    "brown",
+    "cyan",
+    "magenta",
+  ];
   return (
-    <>
-      <ColorPicker colors={colorsArray} />
-    </>
+    <div className="w-screen h-screen flex justify-center items-center">
+      <ColorPicker colors={colorsList} />
+    </div>
   );
-}
+};
 
 export default App;
